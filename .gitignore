@@ -1,18 +1,42 @@
+# Visual Studio / IDE
 .vs/
-*.user
 *.suo
+*.user
 *.userosscache
 *.sln.docstates
 
+# Build output
 [Bb]in/
 [Oo]bj/
 [Dd]ebug/
 [Rr]elease/
+[Dd]ebugPublic/
+[Rr]eleases/
 x64/
 x86/
+build/
 
-packages/
+# NuGet packages
+[Pp]ackages/
 *.nupkg
+*.snupkg
+packages.config.old
 
+# Build and cache files
 *.log
 *.tmp
+*.cache
+*.pidb
+*.svclog
+
+# Visual Studio generated files
+*.aps
+*.ncb
+*.opendb
+*.tlog
+*.VC.db
+*.VC.VC.opendb
+
+# Windows
+Thumbs.db
+Desktop.ini
