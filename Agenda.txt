@@ -1,0 +1,6 @@
+﻿A construção começou em 13:58...
+1>------ Compilação iniciada: Projeto: Agenda, Configuração: Debug Any CPU ------
+A solução não está salva. Salve sua solução antes de gerenciar os pacotes NuGet.
+1>C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(3455,5): error MSB3552: O arquivo de recurso "Properties\Resources.resx" não foi encontrado.
+========== Compilação: 0 bem-sucedida, 1 com falha, 0 atualizada, 0 ignorada ==========
+========== Compilação concluído às 13:58 e levou 01,032 segundos ==========
