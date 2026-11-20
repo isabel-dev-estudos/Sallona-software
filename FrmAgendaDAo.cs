@@ -6,7 +6,7 @@ namespace Agenda
 {
     internal class FrmAgendaDAo
     {
-        private string conexao = "Server=localhost;Database=SALLONA_DB;Uid=root;Pwd=;";
+        private string conexao = "Server=localhost;Database=SALLONA_DB;Uid=root;Pwd=root;";
 
         private int BuscarCliente(string nome)
         {

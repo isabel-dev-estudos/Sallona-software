@@ -6,7 +6,7 @@ namespace Agenda
 {
     internal class FrmDashboardDAO
     {
-        private string conexao = "Server=localhost;Database=SALLONA_DB;Uid=root;Pwd=;";
+        private string conexao = "Server=localhost;Database=SALLONA_DB;Uid=root;Pwd=root;";
 
         private void PreencherProcedimentos(Agendamento agendamento)
         {
