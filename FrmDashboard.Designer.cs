@@ -88,7 +88,7 @@
             // 
             this.PnlFaturamento.Controls.Add(this.TxtFaturamento);
             this.PnlFaturamento.Controls.Add(this.LblFaturamento);
-            this.PnlFaturamento.Location = new System.Drawing.Point(808, 153);
+            this.PnlFaturamento.Location = new System.Drawing.Point(638, 153);
             this.PnlFaturamento.Name = "PnlFaturamento";
             this.PnlFaturamento.Size = new System.Drawing.Size(200, 77);
             this.PnlFaturamento.TabIndex = 4;
@@ -115,7 +115,7 @@
             // 
             this.PnlAtendimentos.Controls.Add(this.TxtQntAtendimentos);
             this.PnlAtendimentos.Controls.Add(this.LblQntAtendimentos);
-            this.PnlAtendimentos.Location = new System.Drawing.Point(808, 68);
+            this.PnlAtendimentos.Location = new System.Drawing.Point(638, 70);
             this.PnlAtendimentos.Name = "PnlAtendimentos";
             this.PnlAtendimentos.Size = new System.Drawing.Size(200, 77);
             this.PnlAtendimentos.TabIndex = 5;
@@ -140,6 +140,8 @@
             // 
             // PnlServicos
             // 
+            this.PnlServicos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlServicos.Controls.Add(this.TxtPercentualSobrancelha);
             this.PnlServicos.Controls.Add(this.TxtPercentualHidratacao);
             this.PnlServicos.Controls.Add(this.TxtPercentualColoracao);
@@ -159,7 +161,7 @@
             this.PnlServicos.Controls.Add(this.LblMechas);
             this.PnlServicos.Controls.Add(this.LblCorte);
             this.PnlServicos.Controls.Add(this.LblServicos);
-            this.PnlServicos.Location = new System.Drawing.Point(331, 68);
+            this.PnlServicos.Location = new System.Drawing.Point(273, 68);
             this.PnlServicos.Name = "PnlServicos";
             this.PnlServicos.Size = new System.Drawing.Size(359, 162);
             this.PnlServicos.TabIndex = 5;
@@ -328,6 +330,9 @@
             // 
             this.DgvAtendimentos.AllowUserToAddRows = false;
             this.DgvAtendimentos.AllowUserToDeleteRows = false;
+            this.DgvAtendimentos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DgvAtendimentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvAtendimentos.BackgroundColor = System.Drawing.Color.White;
             this.DgvAtendimentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -417,23 +422,25 @@
             // 
             // PnlPaginas
             // 
-            this.PnlPaginas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PnlPaginas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlPaginas.BackColor = System.Drawing.Color.White;
             this.PnlPaginas.Controls.Add(this.BtnSair);
             this.PnlPaginas.Controls.Add(this.BtnAgenda);
             this.PnlPaginas.Controls.Add(this.BtnClientes);
-            this.PnlPaginas.Location = new System.Drawing.Point(1052, 68);
+            this.PnlPaginas.Location = new System.Drawing.Point(877, 68);
             this.PnlPaginas.Name = "PnlPaginas";
-            this.PnlPaginas.Size = new System.Drawing.Size(130, 455);
+            this.PnlPaginas.Size = new System.Drawing.Size(130, 162);
             this.PnlPaginas.TabIndex = 23;
             // 
             // BtnSair
             // 
+            this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSair.FlatAppearance.BorderSize = 0;
             this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSair.Location = new System.Drawing.Point(40, 439);
+            this.BtnSair.Location = new System.Drawing.Point(45, 109);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(51, 40);
             this.BtnSair.TabIndex = 6;
@@ -443,6 +450,8 @@
             // 
             // BtnAgenda
             // 
+            this.BtnAgenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnAgenda.FlatAppearance.BorderSize = 0;
             this.BtnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -456,10 +465,12 @@
             // 
             // BtnClientes
             // 
+            this.BtnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClientes.FlatAppearance.BorderSize = 0;
             this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClientes.Location = new System.Drawing.Point(31, 105);
+            this.BtnClientes.Location = new System.Drawing.Point(31, 53);
             this.BtnClientes.Name = "BtnClientes";
             this.BtnClientes.Size = new System.Drawing.Size(70, 40);
             this.BtnClientes.TabIndex = 5;

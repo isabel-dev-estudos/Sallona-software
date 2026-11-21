@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Dashboard;
+using System;
 using System.Windows.Forms;
+using Clientes;
 
 namespace Agenda
 {
@@ -102,7 +104,6 @@ namespace Agenda
                 + "Forma de pagamento: " + forma + Environment.NewLine + Environment.NewLine
                 + "Pagamento registrado com sucesso.";
             MessageBox.Show(mensagem, "Pagamento", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Close();
         }
 
         private void Btn_Limpar_Click(object sender, EventArgs e)
@@ -111,5 +112,26 @@ namespace Agenda
             Rdb_Pix.Checked = false;
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new FrmDashboard(), this);
+
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new Clientesforms(), this);
+        }
+
+        private void btnAgenda_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new FrmAgenda(), this);
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+    
     }
 }

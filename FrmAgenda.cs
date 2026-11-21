@@ -455,8 +455,7 @@ namespace Agenda
                 MostrarAviso("Selecione um agendamento na lista.");
                 return;
             }
-            FrmPagamento tela = new FrmPagamento(agendamento);
-            tela.ShowDialog();
+            Paginas.Abrir(new FrmPagamento(agendamento), this);
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -478,5 +477,6 @@ namespace Agenda
         {
 
         }
+
     }
 }

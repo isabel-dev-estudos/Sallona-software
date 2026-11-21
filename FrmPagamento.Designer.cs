@@ -40,12 +40,11 @@
             this.Btn_Limpar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnAgenda = new System.Windows.Forms.Button();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.btnFinanceiro = new System.Windows.Forms.Button();
+            this.lblTitulo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Procedimentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Valores)).BeginInit();
             this.Grb_Forma.SuspendLayout();
@@ -174,23 +173,10 @@
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.btnAgenda);
             this.panel1.Controls.Add(this.btnClientes);
-            this.panel1.Controls.Add(this.btnFinanceiro);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1055, 55);
             this.panel1.TabIndex = 9;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.BackColor = System.Drawing.Color.OldLace;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.PaleVioletRed;
-            this.lblTitulo.Location = new System.Drawing.Point(312, 81);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(115, 24);
-            this.lblTitulo.TabIndex = 10;
-            this.lblTitulo.Text = "Pagamento";
             // 
             // btnSair
             // 
@@ -206,6 +192,7 @@
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnDashboard
             // 
@@ -218,18 +205,20 @@
             this.btnDashboard.TabIndex = 4;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnAgenda
             // 
             this.btnAgenda.FlatAppearance.BorderSize = 0;
             this.btnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgenda.Location = new System.Drawing.Point(762, 11);
+            this.btnAgenda.Location = new System.Drawing.Point(609, 11);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(100, 40);
             this.btnAgenda.TabIndex = 8;
             this.btnAgenda.Text = "Agenda";
             this.btnAgenda.UseVisualStyleBackColor = true;
+            this.btnAgenda.Click += new System.EventHandler(this.btnAgenda_Click);
             // 
             // btnClientes
             // 
@@ -242,18 +231,19 @@
             this.btnClientes.TabIndex = 5;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
-            // btnFinanceiro
+            // lblTitulo
             // 
-            this.btnFinanceiro.FlatAppearance.BorderSize = 0;
-            this.btnFinanceiro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnFinanceiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinanceiro.Location = new System.Drawing.Point(591, 11);
-            this.btnFinanceiro.Name = "btnFinanceiro";
-            this.btnFinanceiro.Size = new System.Drawing.Size(100, 40);
-            this.btnFinanceiro.TabIndex = 7;
-            this.btnFinanceiro.Text = "Financeiro";
-            this.btnFinanceiro.UseVisualStyleBackColor = true;
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.BackColor = System.Drawing.Color.OldLace;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.lblTitulo.Location = new System.Drawing.Point(312, 81);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(115, 24);
+            this.lblTitulo.TabIndex = 10;
+            this.lblTitulo.Text = "Pagamento";
             // 
             // FrmPagamento
             // 
@@ -303,6 +293,5 @@
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnAgenda;
         private System.Windows.Forms.Button btnClientes;
-        private System.Windows.Forms.Button btnFinanceiro;
     }
 }

@@ -496,8 +496,9 @@
             // 
             // BtnEditar
             // 
+            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnEditar.BackColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(624, 595);
+            this.BtnEditar.Location = new System.Drawing.Point(572, 597);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(75, 23);
             this.BtnEditar.TabIndex = 18;
@@ -507,8 +508,9 @@
             // 
             // BtnExcluir
             // 
+            this.BtnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnExcluir.BackColor = System.Drawing.Color.White;
-            this.BtnExcluir.Location = new System.Drawing.Point(517, 595);
+            this.BtnExcluir.Location = new System.Drawing.Point(465, 597);
             this.BtnExcluir.Name = "BtnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
             this.BtnExcluir.TabIndex = 17;
@@ -518,10 +520,11 @@
             // 
             // Btn_Pagar
             // 
+            this.Btn_Pagar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Btn_Pagar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.Btn_Pagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Pagar.Location = new System.Drawing.Point(732, 595);
+            this.Btn_Pagar.Location = new System.Drawing.Point(680, 597);
             this.Btn_Pagar.Name = "Btn_Pagar";
             this.Btn_Pagar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Pagar.TabIndex = 19;
@@ -531,6 +534,8 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.BtnSair);
             this.panel1.Controls.Add(this.BtnDashboard);
@@ -542,10 +547,11 @@
             // 
             // BtnSair
             // 
+            this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSair.FlatAppearance.BorderSize = 0;
             this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSair.Location = new System.Drawing.Point(546, 9);
+            this.BtnSair.Location = new System.Drawing.Point(560, 9);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(51, 40);
             this.BtnSair.TabIndex = 6;
@@ -571,7 +577,7 @@
             this.BtnClientes.FlatAppearance.BorderSize = 0;
             this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClientes.Location = new System.Drawing.Point(281, 9);
+            this.BtnClientes.Location = new System.Drawing.Point(279, 9);
             this.BtnClientes.Name = "BtnClientes";
             this.BtnClientes.Size = new System.Drawing.Size(70, 40);
             this.BtnClientes.TabIndex = 5;

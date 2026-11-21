@@ -1,4 +1,6 @@
-﻿using Clientes.Telas;
+﻿using Agenda;
+using Clientes.Telas;
+using Dashboard;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -235,14 +237,27 @@ namespace Clientes
             menu.Items.Add(item);
         }
 
-        private void Clientesforms_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAgenda_Click(object sender, EventArgs e)
         {
+            Paginas.Abrir(new FrmAgenda(), this);
 
         }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new FrmDashboard(), this);
+
+        }
+
+        private void btnExcluir_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNovo_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
