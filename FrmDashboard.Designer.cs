@@ -65,10 +65,15 @@
             this.BtnSemanal = new System.Windows.Forms.Button();
             this.BtnDiario = new System.Windows.Forms.Button();
             this.LblAgendamentos = new System.Windows.Forms.Label();
+            this.PnlPaginas = new System.Windows.Forms.Panel();
+            this.BtnSair = new System.Windows.Forms.Button();
+            this.BtnAgenda = new System.Windows.Forms.Button();
+            this.BtnClientes = new System.Windows.Forms.Button();
             this.PnlFaturamento.SuspendLayout();
             this.PnlAtendimentos.SuspendLayout();
             this.PnlServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAtendimentos)).BeginInit();
+            this.PnlPaginas.SuspendLayout();
             this.SuspendLayout();
             // 
             // CalCalendarioD
@@ -83,7 +88,7 @@
             // 
             this.PnlFaturamento.Controls.Add(this.TxtFaturamento);
             this.PnlFaturamento.Controls.Add(this.LblFaturamento);
-            this.PnlFaturamento.Location = new System.Drawing.Point(638, 153);
+            this.PnlFaturamento.Location = new System.Drawing.Point(808, 153);
             this.PnlFaturamento.Name = "PnlFaturamento";
             this.PnlFaturamento.Size = new System.Drawing.Size(200, 77);
             this.PnlFaturamento.TabIndex = 4;
@@ -110,7 +115,7 @@
             // 
             this.PnlAtendimentos.Controls.Add(this.TxtQntAtendimentos);
             this.PnlAtendimentos.Controls.Add(this.LblQntAtendimentos);
-            this.PnlAtendimentos.Location = new System.Drawing.Point(638, 68);
+            this.PnlAtendimentos.Location = new System.Drawing.Point(808, 68);
             this.PnlAtendimentos.Name = "PnlAtendimentos";
             this.PnlAtendimentos.Size = new System.Drawing.Size(200, 77);
             this.PnlAtendimentos.TabIndex = 5;
@@ -154,7 +159,7 @@
             this.PnlServicos.Controls.Add(this.LblMechas);
             this.PnlServicos.Controls.Add(this.LblCorte);
             this.PnlServicos.Controls.Add(this.LblServicos);
-            this.PnlServicos.Location = new System.Drawing.Point(257, 68);
+            this.PnlServicos.Location = new System.Drawing.Point(331, 68);
             this.PnlServicos.Name = "PnlServicos";
             this.PnlServicos.Size = new System.Drawing.Size(359, 162);
             this.PnlServicos.TabIndex = 5;
@@ -333,7 +338,7 @@
             this.ColHorario,
             this.ColValor});
             this.DgvAtendimentos.GridColor = System.Drawing.Color.White;
-            this.DgvAtendimentos.Location = new System.Drawing.Point(18, 267);
+            this.DgvAtendimentos.Location = new System.Drawing.Point(19, 278);
             this.DgvAtendimentos.Name = "DgvAtendimentos";
             this.DgvAtendimentos.ReadOnly = true;
             this.DgvAtendimentos.RowHeadersVisible = false;
@@ -404,11 +409,63 @@
             // LblAgendamentos
             // 
             this.LblAgendamentos.AutoSize = true;
-            this.LblAgendamentos.Location = new System.Drawing.Point(19, 243);
+            this.LblAgendamentos.Location = new System.Drawing.Point(20, 254);
             this.LblAgendamentos.Name = "LblAgendamentos";
             this.LblAgendamentos.Size = new System.Drawing.Size(114, 13);
             this.LblAgendamentos.TabIndex = 10;
             this.LblAgendamentos.Text = "Últimos agendamentos";
+            // 
+            // PnlPaginas
+            // 
+            this.PnlPaginas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PnlPaginas.BackColor = System.Drawing.Color.White;
+            this.PnlPaginas.Controls.Add(this.BtnSair);
+            this.PnlPaginas.Controls.Add(this.BtnAgenda);
+            this.PnlPaginas.Controls.Add(this.BtnClientes);
+            this.PnlPaginas.Location = new System.Drawing.Point(1052, 68);
+            this.PnlPaginas.Name = "PnlPaginas";
+            this.PnlPaginas.Size = new System.Drawing.Size(130, 455);
+            this.PnlPaginas.TabIndex = 23;
+            // 
+            // BtnSair
+            // 
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.Location = new System.Drawing.Point(40, 439);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Size = new System.Drawing.Size(51, 40);
+            this.BtnSair.TabIndex = 6;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.UseVisualStyleBackColor = true;
+            this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
+            // 
+            // BtnAgenda
+            // 
+            this.BtnAgenda.FlatAppearance.BorderSize = 0;
+            this.BtnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgenda.Location = new System.Drawing.Point(31, 13);
+            this.BtnAgenda.Name = "BtnAgenda";
+            this.BtnAgenda.Size = new System.Drawing.Size(70, 40);
+            this.BtnAgenda.TabIndex = 4;
+            this.BtnAgenda.Text = "Agenda";
+            this.BtnAgenda.UseVisualStyleBackColor = true;
+            this.BtnAgenda.Click += new System.EventHandler(this.BtnAgenda_Click);
+            // 
+            // BtnClientes
+            // 
+            this.BtnClientes.FlatAppearance.BorderSize = 0;
+            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClientes.Location = new System.Drawing.Point(31, 105);
+            this.BtnClientes.Name = "BtnClientes";
+            this.BtnClientes.Size = new System.Drawing.Size(70, 40);
+            this.BtnClientes.TabIndex = 5;
+            this.BtnClientes.Text = "Clientes";
+            this.BtnClientes.UseVisualStyleBackColor = true;
+            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
             // 
             // FrmDashboard
             // 
@@ -416,6 +473,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1054, 636);
+            this.Controls.Add(this.PnlPaginas);
             this.Controls.Add(this.LblAgendamentos);
             this.Controls.Add(this.PnlAtendimentos);
             this.Controls.Add(this.PnlFaturamento);
@@ -435,6 +493,7 @@
             this.PnlServicos.ResumeLayout(false);
             this.PnlServicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAtendimentos)).EndInit();
+            this.PnlPaginas.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -479,6 +538,10 @@
         private System.Windows.Forms.TextBox TxtPercentualSobrancelha;
         private System.Windows.Forms.TextBox TxtPercentualHidratacao;
         private System.Windows.Forms.TextBox TxtPercentualColoracao;
+        private System.Windows.Forms.Panel PnlPaginas;
+        private System.Windows.Forms.Button BtnSair;
+        private System.Windows.Forms.Button BtnAgenda;
+        private System.Windows.Forms.Button BtnClientes;
     }
 }
 

@@ -66,13 +66,10 @@
             this.BtnEditar = new System.Windows.Forms.Button();
             this.BtnExcluir = new System.Windows.Forms.Button();
             this.Btn_Pagar = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnAgenda = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
-            this.btnFinanceiro = new System.Windows.Forms.Button();
+            this.BtnSair = new System.Windows.Forms.Button();
+            this.BtnDashboard = new System.Windows.Forms.Button();
+            this.BtnClientes = new System.Windows.Forms.Button();
             this.GrpFormulario.SuspendLayout();
             this.FlpFiltros.SuspendLayout();
             this.FlpAgendamento.SuspendLayout();
@@ -261,7 +258,7 @@
             // LblTitulo
             // 
             this.LblTitulo.AutoSize = true;
-            this.LblTitulo.Location = new System.Drawing.Point(277, 71);
+            this.LblTitulo.Location = new System.Drawing.Point(277, 68);
             this.LblTitulo.Name = "LblTitulo";
             this.LblTitulo.Size = new System.Drawing.Size(169, 13);
             this.LblTitulo.TabIndex = 2;
@@ -532,98 +529,55 @@
             this.Btn_Pagar.UseVisualStyleBackColor = false;
             this.Btn_Pagar.Click += new System.EventHandler(this.Btn_Pagar_Click);
             // 
-            // btnSair
-            // 
-            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSair.FlatAppearance.BorderSize = 0;
-            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Location = new System.Drawing.Point(1014, 18);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(0, 40);
-            this.btnSair.TabIndex = 21;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.btnDashboard);
-            this.panel1.Controls.Add(this.btnAgenda);
-            this.panel1.Controls.Add(this.btnClientes);
-            this.panel1.Controls.Add(this.btnFinanceiro);
+            this.panel1.Controls.Add(this.BtnSair);
+            this.panel1.Controls.Add(this.BtnDashboard);
+            this.panel1.Controls.Add(this.BtnClientes);
             this.panel1.Location = new System.Drawing.Point(277, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(657, 59);
             this.panel1.TabIndex = 22;
             // 
-            // button1
+            // BtnSair
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(584, 9);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 40);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Sair";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.Location = new System.Drawing.Point(546, 9);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Size = new System.Drawing.Size(51, 40);
+            this.BtnSair.TabIndex = 6;
+            this.BtnSair.Text = "Sair";
+            this.BtnSair.UseVisualStyleBackColor = true;
+            this.BtnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
-            // btnDashboard
+            // BtnDashboard
             // 
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Location = new System.Drawing.Point(24, 9);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(70, 40);
-            this.btnDashboard.TabIndex = 4;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.UseVisualStyleBackColor = true;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.BtnDashboard.FlatAppearance.BorderSize = 0;
+            this.BtnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDashboard.Location = new System.Drawing.Point(69, 9);
+            this.BtnDashboard.Name = "BtnDashboard";
+            this.BtnDashboard.Size = new System.Drawing.Size(70, 40);
+            this.BtnDashboard.TabIndex = 4;
+            this.BtnDashboard.Text = "Dashboard";
+            this.BtnDashboard.UseVisualStyleBackColor = true;
+            this.BtnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
-            // btnAgenda
+            // BtnClientes
             // 
-            this.btnAgenda.FlatAppearance.BorderSize = 0;
-            this.btnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgenda.Location = new System.Drawing.Point(455, 9);
-            this.btnAgenda.Name = "btnAgenda";
-            this.btnAgenda.Size = new System.Drawing.Size(70, 40);
-            this.btnAgenda.TabIndex = 8;
-            this.btnAgenda.Text = "Agenda";
-            this.btnAgenda.UseVisualStyleBackColor = true;
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Location = new System.Drawing.Point(150, 9);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(70, 40);
-            this.btnClientes.TabIndex = 5;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.UseVisualStyleBackColor = true;
-            // 
-            // btnFinanceiro
-            // 
-            this.btnFinanceiro.FlatAppearance.BorderSize = 0;
-            this.btnFinanceiro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnFinanceiro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinanceiro.Location = new System.Drawing.Point(296, 9);
-            this.btnFinanceiro.Name = "btnFinanceiro";
-            this.btnFinanceiro.Size = new System.Drawing.Size(70, 40);
-            this.btnFinanceiro.TabIndex = 7;
-            this.btnFinanceiro.Text = "Financeiro";
-            this.btnFinanceiro.UseVisualStyleBackColor = true;
+            this.BtnClientes.FlatAppearance.BorderSize = 0;
+            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnClientes.Location = new System.Drawing.Point(281, 9);
+            this.BtnClientes.Name = "BtnClientes";
+            this.BtnClientes.Size = new System.Drawing.Size(70, 40);
+            this.BtnClientes.TabIndex = 5;
+            this.BtnClientes.Text = "Clientes";
+            this.BtnClientes.UseVisualStyleBackColor = true;
+            this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
             // 
             // FrmAgenda
             // 
@@ -632,7 +586,6 @@
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1054, 636);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.Btn_Pagar);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnExcluir);
@@ -699,13 +652,10 @@
         private System.Windows.Forms.Button BtnExcluir;
         private System.Windows.Forms.CheckedListBox ClbProcedimentos;
         private System.Windows.Forms.Button Btn_Pagar;
-        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnAgenda;
-        private System.Windows.Forms.Button btnClientes;
-        private System.Windows.Forms.Button btnFinanceiro;
+        private System.Windows.Forms.Button BtnSair;
+        private System.Windows.Forms.Button BtnDashboard;
+        private System.Windows.Forms.Button BtnClientes;
     }
 }
 

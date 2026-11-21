@@ -11,7 +11,7 @@ public class Conexao
             Port = 3306,
             Database = "sallona_db",
             UserID = "root",
-            Password = ""
+            Password = "root"
         };
 
         return new MySqlConnection(sb.ConnectionString);

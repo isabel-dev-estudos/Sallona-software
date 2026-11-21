@@ -74,8 +74,7 @@ namespace Login
 
         private void AbrirMenuPrincipal()
         {
-            MessageBox.Show("Login realizado com sucesso!", "Sallona",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult = DialogResult.OK;
         }
 
         private void lnkMostrar_Click(object sender, EventArgs e)

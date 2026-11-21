@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dashboard;
+using Clientes;
 
 namespace Agenda
 {
@@ -459,10 +461,20 @@ namespace Agenda
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-
+            Paginas.Abrir(new FrmDashboard(), this);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnClientes_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new Clientesforms(), this);
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnAgenda_Click(object sender, EventArgs e)
         {
 
         }

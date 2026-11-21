@@ -1,3 +1,5 @@
+using Agenda;
+using Clientes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Agenda;
+
 
 namespace Dashboard
 {
@@ -123,5 +125,19 @@ namespace Dashboard
             caixa.Text = percentual.ToString("F1");
         }
 
+        private void BtnClientes_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new Clientesforms(), this);
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnAgenda_Click(object sender, EventArgs e)
+        {
+            Paginas.Abrir(new FrmAgenda(), this);
+        }
     }
 }
