@@ -496,6 +496,7 @@
             this.Controls.Add(this.CalCalendarioD);
             this.Name = "FrmDashboard";
             this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.PnlFaturamento.ResumeLayout(false);
             this.PnlFaturamento.PerformLayout();

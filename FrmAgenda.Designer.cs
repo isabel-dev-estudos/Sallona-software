@@ -498,7 +498,7 @@
             // 
             this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnEditar.BackColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(572, 597);
+            this.BtnEditar.Location = new System.Drawing.Point(572, 608);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(75, 23);
             this.BtnEditar.TabIndex = 18;
@@ -510,7 +510,7 @@
             // 
             this.BtnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtnExcluir.BackColor = System.Drawing.Color.White;
-            this.BtnExcluir.Location = new System.Drawing.Point(465, 597);
+            this.BtnExcluir.Location = new System.Drawing.Point(465, 608);
             this.BtnExcluir.Name = "BtnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
             this.BtnExcluir.TabIndex = 17;
@@ -524,7 +524,7 @@
             this.Btn_Pagar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.Btn_Pagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Pagar.Location = new System.Drawing.Point(680, 597);
+            this.Btn_Pagar.Location = new System.Drawing.Point(680, 608);
             this.Btn_Pagar.Name = "Btn_Pagar";
             this.Btn_Pagar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Pagar.TabIndex = 19;
@@ -603,6 +603,7 @@
             this.Controls.Add(this.FlpAgendamento);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmAgenda_Load);
             this.GrpFormulario.ResumeLayout(false);
             this.GrpFormulario.PerformLayout();

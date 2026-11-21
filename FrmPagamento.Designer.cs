@@ -168,27 +168,27 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Controls.Add(this.btnAgenda);
             this.panel1.Controls.Add(this.btnClientes);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Location = new System.Drawing.Point(53, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1055, 55);
+            this.panel1.Size = new System.Drawing.Size(954, 55);
             this.panel1.TabIndex = 9;
             // 
             // btnSair
             // 
-            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSair.FlatAppearance.BorderSize = 0;
             this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Location = new System.Drawing.Point(945, 11);
+            this.btnSair.Location = new System.Drawing.Point(832, 11);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(100, 40);
+            this.btnSair.Size = new System.Drawing.Size(47, 40);
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -199,7 +199,7 @@
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Location = new System.Drawing.Point(218, 11);
+            this.btnDashboard.Location = new System.Drawing.Point(27, 11);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(100, 40);
             this.btnDashboard.TabIndex = 4;
@@ -212,7 +212,7 @@
             this.btnAgenda.FlatAppearance.BorderSize = 0;
             this.btnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgenda.Location = new System.Drawing.Point(609, 11);
+            this.btnAgenda.Location = new System.Drawing.Point(456, 11);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(100, 40);
             this.btnAgenda.TabIndex = 8;
@@ -225,7 +225,7 @@
             this.btnClientes.FlatAppearance.BorderSize = 0;
             this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Location = new System.Drawing.Point(405, 11);
+            this.btnClientes.Location = new System.Drawing.Point(255, 11);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(100, 40);
             this.btnClientes.TabIndex = 5;
@@ -264,6 +264,7 @@
             this.Controls.Add(this.Txb_Cliente);
             this.Name = "FrmPagamento";
             this.Text = "Pagamento";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Procedimentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Valores)).EndInit();
             this.Grb_Forma.ResumeLayout(false);

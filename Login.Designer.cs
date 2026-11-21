@@ -34,6 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.chkLembrar = new System.Windows.Forms.CheckBox();
             this.lnkMostrar = new System.Windows.Forms.LinkLabel();
+            this.LblSallona = new System.Windows.Forms.Label();
             this.pnlLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,13 +44,14 @@
             this.pnlLateral.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.pnlLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(194)))));
+            this.pnlLateral.Controls.Add(this.LblSallona);
             this.pnlLateral.Controls.Add(this.label6);
             this.pnlLateral.Controls.Add(this.label8);
             this.pnlLateral.Controls.Add(this.label7);
             this.pnlLateral.Controls.Add(this.pictureBox1);
             this.pnlLateral.Location = new System.Drawing.Point(-1, -6);
             this.pnlLateral.Name = "pnlLateral";
-            this.pnlLateral.Size = new System.Drawing.Size(467, 517);
+            this.pnlLateral.Size = new System.Drawing.Size(454, 517);
             this.pnlLateral.TabIndex = 0;
             // 
             // label6
@@ -58,7 +60,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(104, 494);
+            this.label6.Location = new System.Drawing.Point(98, 494);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(242, 13);
             this.label6.TabIndex = 13;
@@ -66,11 +68,11 @@
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(23, 411);
+            this.label8.Location = new System.Drawing.Point(17, 411);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(418, 15);
             this.label8.TabIndex = 12;
@@ -81,7 +83,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Georgia", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(49, 266);
+            this.label7.Location = new System.Drawing.Point(49, 363);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(334, 15);
             this.label7.TabIndex = 11;
@@ -90,7 +92,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(42, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(52, 89);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(349, 229);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -118,9 +120,9 @@
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
             this.label1.Location = new System.Drawing.Point(559, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 36);
+            this.label1.Size = new System.Drawing.Size(287, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Entrar no sistema.";
+            this.label1.Text = "Entrar no sistema";
             // 
             // label2
             // 
@@ -211,6 +213,16 @@
             this.lnkMostrar.TabStop = true;
             this.lnkMostrar.Text = "Mostrar";
             // 
+            // LblSallona
+            // 
+            this.LblSallona.AutoSize = true;
+            this.LblSallona.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSallona.Location = new System.Drawing.Point(166, 34);
+            this.LblSallona.Name = "LblSallona";
+            this.LblSallona.Size = new System.Drawing.Size(155, 31);
+            this.LblSallona.TabIndex = 14;
+            this.LblSallona.Text = "SALLONA";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +243,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.Text = "Login";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlLateral.ResumeLayout(false);
             this.pnlLateral.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -256,5 +269,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.CheckBox chkLembrar;
         private System.Windows.Forms.LinkLabel lnkMostrar;
+        private System.Windows.Forms.Label LblSallona;
     }
 }
