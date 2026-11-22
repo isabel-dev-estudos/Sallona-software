@@ -235,7 +235,7 @@ namespace Agenda
         private void ConfigurarColunas()
         {
             DgvAgendamentos.Columns["Data"].Visible = false;
-            DgvAgendamentos.Columns["NumAgendamento"].Visible = false;
+            DgvAgendamentos.Columns["NumAgendamento"].Visible = true;
             DgvAgendamentos.Columns["NumCliente"].Visible = false;
             DgvAgendamentos.Columns["Horario"].HeaderText = "Horário";
             DgvAgendamentos.Columns["Valor"].DefaultCellStyle.Format = "C2";
@@ -412,41 +412,6 @@ namespace Agenda
             MessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Todos_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FlpAgendamento_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Btn_Pagar_Click(object sender, EventArgs e)
         {
             Agendamento agendamento = BuscarAgendamento();
@@ -471,11 +436,6 @@ namespace Agenda
         private void BtnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void BtnAgenda_Click(object sender, EventArgs e)
-        {
-
         }
 
     }

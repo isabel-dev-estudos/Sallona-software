@@ -178,7 +178,6 @@
             this.CmbHorario.Name = "CmbHorario";
             this.CmbHorario.Size = new System.Drawing.Size(189, 21);
             this.CmbHorario.TabIndex = 7;
-            this.CmbHorario.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // LblHorario
             // 
@@ -197,7 +196,6 @@
             this.LblData.Size = new System.Drawing.Size(30, 13);
             this.LblData.TabIndex = 5;
             this.LblData.Text = "Data";
-            this.LblData.Click += new System.EventHandler(this.label2_Click);
             // 
             // DtpData
             // 
@@ -226,7 +224,6 @@
             this.ClbProcedimentos.Size = new System.Drawing.Size(191, 94);
             this.ClbProcedimentos.TabIndex = 3;
             this.ClbProcedimentos.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.ClbProcedimentos_ItemCheck);
-            this.ClbProcedimentos.SelectedIndexChanged += new System.EventHandler(this.Todos_SelectedIndexChanged);
             // 
             // LblProcedimento
             // 
@@ -236,7 +233,6 @@
             this.LblProcedimento.Size = new System.Drawing.Size(143, 13);
             this.LblProcedimento.TabIndex = 2;
             this.LblProcedimento.Text = "Procedimento a ser realizado";
-            this.LblProcedimento.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // TxtCliente
             // 
@@ -253,7 +249,6 @@
             this.LblCliente.Size = new System.Drawing.Size(39, 13);
             this.LblCliente.TabIndex = 0;
             this.LblCliente.Text = "Cliente";
-            this.LblCliente.Click += new System.EventHandler(this.label1_Click);
             // 
             // LblTitulo
             // 
@@ -389,7 +384,6 @@
             this.FlpAgendamento.TabIndex = 4;
             this.FlpAgendamento.Visible = false;
             this.FlpAgendamento.WrapContents = false;
-            this.FlpAgendamento.Paint += new System.Windows.Forms.PaintEventHandler(this.FlpAgendamento_Paint);
             // 
             // PnlAgendamentos
             // 
@@ -439,7 +433,6 @@
             this.LblValorAgendado.Size = new System.Drawing.Size(34, 13);
             this.LblValorAgendado.TabIndex = 3;
             this.LblValorAgendado.Text = "Valor:";
-            this.LblValorAgendado.Click += new System.EventHandler(this.label9_Click);
             // 
             // TxtClienteAgendado
             // 
@@ -496,9 +489,9 @@
             // 
             // BtnEditar
             // 
-            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnEditar.BackColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(572, 608);
+            this.BtnEditar.Location = new System.Drawing.Point(538, 589);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(75, 23);
             this.BtnEditar.TabIndex = 18;
@@ -508,9 +501,9 @@
             // 
             // BtnExcluir
             // 
-            this.BtnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.BtnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnExcluir.BackColor = System.Drawing.Color.White;
-            this.BtnExcluir.Location = new System.Drawing.Point(465, 608);
+            this.BtnExcluir.Location = new System.Drawing.Point(441, 589);
             this.BtnExcluir.Name = "BtnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
             this.BtnExcluir.TabIndex = 17;
@@ -520,11 +513,11 @@
             // 
             // Btn_Pagar
             // 
-            this.Btn_Pagar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Btn_Pagar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.Btn_Pagar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.Btn_Pagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Pagar.Location = new System.Drawing.Point(680, 608);
+            this.Btn_Pagar.Location = new System.Drawing.Point(641, 588);
             this.Btn_Pagar.Name = "Btn_Pagar";
             this.Btn_Pagar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Pagar.TabIndex = 19;
