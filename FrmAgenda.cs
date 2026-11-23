@@ -29,9 +29,9 @@ namespace Agenda
 
         private void FrmAgenda_Load(object sender, EventArgs e)
         {
-            foreach (object item in CmbHorario.Items)
+            foreach (string item in CmbHorario.Items)
             {
-                horarios.Add(item.ToString());
+                horarios.Add(item);
             }
             CarregarHorarios();
             AtualizarAgenda();
@@ -50,21 +50,21 @@ namespace Agenda
 
         private void CalCalendario_DateSelected(object sender, DateRangeEventArgs e)
         {
-            if (e.Start.DayOfWeek == DayOfWeek.Sunday)
+            if (CalCalendario.SelectionStart.DayOfWeek == DayOfWeek.Sunday)
             {
                 MostrarAviso("O salão não funciona aos domingos.");
-                CalCalendario.SetDate(e.Start.AddDays(1));
+                CalCalendario.SetDate(CalCalendario.SelectionStart.AddDays(1));
             }
             AtualizarAgenda();
         }
 
         private void DgvAgendamentos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
+            if (e.RowIndex >= 0)
             {
-                return;
+
+                horarioSelecionado = Convert.ToString(DgvAgendamentos.Rows[e.RowIndex].Cells["Horario"].Value);
             }
-            horarioSelecionado = Convert.ToString(DgvAgendamentos.Rows[e.RowIndex].Cells["Horario"].Value);
         }
 
         private void ClbProcedimentos_ItemCheck(object sender, ItemCheckEventArgs e)
@@ -409,7 +409,7 @@ namespace Agenda
 
         private static void MostrarAviso(string mensagem)
         {
-            MessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK);
         }
 
         private void Btn_Pagar_Click(object sender, EventArgs e)
