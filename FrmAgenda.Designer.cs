@@ -70,12 +70,15 @@
             this.BtnSair = new System.Windows.Forms.Button();
             this.BtnDashboard = new System.Windows.Forms.Button();
             this.BtnClientes = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.LblAviso = new System.Windows.Forms.Label();
             this.GrpFormulario.SuspendLayout();
             this.FlpFiltros.SuspendLayout();
             this.FlpAgendamento.SuspendLayout();
             this.PnlAgendamentos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAgendamentos)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // CalCalendario
@@ -491,7 +494,7 @@
             // 
             this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnEditar.BackColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(538, 589);
+            this.BtnEditar.Location = new System.Drawing.Point(544, 590);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(75, 23);
             this.BtnEditar.TabIndex = 18;
@@ -503,7 +506,7 @@
             // 
             this.BtnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnExcluir.BackColor = System.Drawing.Color.White;
-            this.BtnExcluir.Location = new System.Drawing.Point(441, 589);
+            this.BtnExcluir.Location = new System.Drawing.Point(447, 590);
             this.BtnExcluir.Name = "BtnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
             this.BtnExcluir.TabIndex = 17;
@@ -517,7 +520,7 @@
             this.Btn_Pagar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.Btn_Pagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Pagar.Location = new System.Drawing.Point(641, 588);
+            this.Btn_Pagar.Location = new System.Drawing.Point(647, 589);
             this.Btn_Pagar.Name = "Btn_Pagar";
             this.Btn_Pagar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Pagar.TabIndex = 19;
@@ -578,6 +581,27 @@
             this.BtnClientes.UseVisualStyleBackColor = true;
             this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.LblAviso);
+            this.panel2.Location = new System.Drawing.Point(739, 579);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(167, 47);
+            this.panel2.TabIndex = 23;
+            // 
+            // LblAviso
+            // 
+            this.LblAviso.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.LblAviso.AutoSize = true;
+            this.LblAviso.Location = new System.Drawing.Point(5, 10);
+            this.LblAviso.Name = "LblAviso";
+            this.LblAviso.Size = new System.Drawing.Size(161, 26);
+            this.LblAviso.TabIndex = 0;
+            this.LblAviso.Text = "Para pagar, é neessário primeiro \r\nseleionar um agendamento.";
+            // 
             // FrmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -585,6 +609,7 @@
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1054, 636);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.Btn_Pagar);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnExcluir);
@@ -607,6 +632,8 @@
             this.PnlAgendamentos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAgendamentos)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -656,6 +683,8 @@
         private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Button BtnDashboard;
         private System.Windows.Forms.Button BtnClientes;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label LblAviso;
     }
 }
 

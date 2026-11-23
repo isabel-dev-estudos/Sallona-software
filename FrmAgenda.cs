@@ -235,7 +235,7 @@ namespace Agenda
         private void ConfigurarColunas()
         {
             DgvAgendamentos.Columns["Data"].Visible = false;
-            DgvAgendamentos.Columns["NumAgendamento"].Visible = true;
+            DgvAgendamentos.Columns["NumAgendamento"].Visible = false;
             DgvAgendamentos.Columns["NumCliente"].Visible = false;
             DgvAgendamentos.Columns["Horario"].HeaderText = "Horário";
             DgvAgendamentos.Columns["Valor"].DefaultCellStyle.Format = "C2";
@@ -438,5 +438,6 @@ namespace Agenda
             Application.Exit();
         }
 
+        
     }
 }

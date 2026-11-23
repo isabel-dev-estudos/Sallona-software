@@ -131,10 +131,10 @@
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(286, 606);
+            this.label5.Location = new System.Drawing.Point(310, 614);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(344, 13);
             this.label5.TabIndex = 9;
