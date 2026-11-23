@@ -409,7 +409,7 @@ namespace Agenda
 
         private static void MostrarAviso(string mensagem)
         {
-            MessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK);
         }
 
         private void Btn_Pagar_Click(object sender, EventArgs e)
