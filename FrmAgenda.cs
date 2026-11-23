@@ -29,9 +29,9 @@ namespace Agenda
 
         private void FrmAgenda_Load(object sender, EventArgs e)
         {
-            foreach (object item in CmbHorario.Items)
+            foreach (string item in CmbHorario.Items)
             {
-                horarios.Add(item.ToString());
+                horarios.Add(item);
             }
             CarregarHorarios();
             AtualizarAgenda();
