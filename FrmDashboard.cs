@@ -117,9 +117,10 @@ namespace Dashboard
         private void MostrarPercentual(ProgressBar barra, TextBox caixa, int contagem, int total)
         {
             double percentual = 0;
-            if (total > 0)
+            int totalProcedimentos = ContarProcedimento("Hidratação") + ContarProcedimento("Sobrancelha") + ContarProcedimento("Corte") + ContarProcedimento("Selagem") + ContarProcedimento("Coloração") + ContarProcedimento("Mechas");
+            if (totalProcedimentos > 0)
             {
-                percentual = contagem * 100.0 / total;
+                percentual = contagem * 100.0 / totalProcedimentos;
             }
             barra.Value = (int)percentual;
             caixa.Text = percentual.ToString("F1");
