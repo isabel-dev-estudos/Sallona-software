@@ -248,16 +248,5 @@ namespace Clientes
             Paginas.Abrir(new FrmDashboard(), this);
 
         }
-
-        private void btnExcluir_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnNovo_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

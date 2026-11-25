@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDashboard));
             this.CalCalendarioD = new System.Windows.Forms.MonthCalendar();
             this.PnlFaturamento = new System.Windows.Forms.Panel();
             this.TxtFaturamento = new System.Windows.Forms.TextBox();
@@ -69,16 +70,18 @@
             this.BtnSair = new System.Windows.Forms.Button();
             this.BtnAgenda = new System.Windows.Forms.Button();
             this.BtnClientes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.PnlFaturamento.SuspendLayout();
             this.PnlAtendimentos.SuspendLayout();
             this.PnlServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAtendimentos)).BeginInit();
-            this.PnlPaginas.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // CalCalendarioD
             // 
-            this.CalCalendarioD.Location = new System.Drawing.Point(18, 68);
+            this.CalCalendarioD.Location = new System.Drawing.Point(18, 97);
             this.CalCalendarioD.MaxSelectionCount = 1;
             this.CalCalendarioD.Name = "CalCalendarioD";
             this.CalCalendarioD.TabIndex = 0;
@@ -88,7 +91,7 @@
             // 
             this.PnlFaturamento.Controls.Add(this.TxtFaturamento);
             this.PnlFaturamento.Controls.Add(this.LblFaturamento);
-            this.PnlFaturamento.Location = new System.Drawing.Point(638, 153);
+            this.PnlFaturamento.Location = new System.Drawing.Point(649, 180);
             this.PnlFaturamento.Name = "PnlFaturamento";
             this.PnlFaturamento.Size = new System.Drawing.Size(200, 77);
             this.PnlFaturamento.TabIndex = 4;
@@ -115,7 +118,7 @@
             // 
             this.PnlAtendimentos.Controls.Add(this.TxtQntAtendimentos);
             this.PnlAtendimentos.Controls.Add(this.LblQntAtendimentos);
-            this.PnlAtendimentos.Location = new System.Drawing.Point(638, 70);
+            this.PnlAtendimentos.Location = new System.Drawing.Point(649, 97);
             this.PnlAtendimentos.Name = "PnlAtendimentos";
             this.PnlAtendimentos.Size = new System.Drawing.Size(200, 77);
             this.PnlAtendimentos.TabIndex = 5;
@@ -161,7 +164,7 @@
             this.PnlServicos.Controls.Add(this.LblMechas);
             this.PnlServicos.Controls.Add(this.LblCorte);
             this.PnlServicos.Controls.Add(this.LblServicos);
-            this.PnlServicos.Location = new System.Drawing.Point(273, 68);
+            this.PnlServicos.Location = new System.Drawing.Point(273, 97);
             this.PnlServicos.Name = "PnlServicos";
             this.PnlServicos.Size = new System.Drawing.Size(359, 162);
             this.PnlServicos.TabIndex = 5;
@@ -343,7 +346,7 @@
             this.ColHorario,
             this.ColValor});
             this.DgvAtendimentos.GridColor = System.Drawing.Color.White;
-            this.DgvAtendimentos.Location = new System.Drawing.Point(19, 278);
+            this.DgvAtendimentos.Location = new System.Drawing.Point(18, 290);
             this.DgvAtendimentos.Name = "DgvAtendimentos";
             this.DgvAtendimentos.ReadOnly = true;
             this.DgvAtendimentos.RowHeadersVisible = false;
@@ -383,7 +386,7 @@
             // 
             // BtnMensal
             // 
-            this.BtnMensal.Location = new System.Drawing.Point(181, 33);
+            this.BtnMensal.Location = new System.Drawing.Point(181, 64);
             this.BtnMensal.Name = "BtnMensal";
             this.BtnMensal.Size = new System.Drawing.Size(65, 23);
             this.BtnMensal.TabIndex = 9;
@@ -393,7 +396,7 @@
             // 
             // BtnSemanal
             // 
-            this.BtnSemanal.Location = new System.Drawing.Point(97, 33);
+            this.BtnSemanal.Location = new System.Drawing.Point(97, 64);
             this.BtnSemanal.Name = "BtnSemanal";
             this.BtnSemanal.Size = new System.Drawing.Size(65, 23);
             this.BtnSemanal.TabIndex = 8;
@@ -403,7 +406,7 @@
             // 
             // BtnDiario
             // 
-            this.BtnDiario.Location = new System.Drawing.Point(19, 33);
+            this.BtnDiario.Location = new System.Drawing.Point(19, 64);
             this.BtnDiario.Name = "BtnDiario";
             this.BtnDiario.Size = new System.Drawing.Size(62, 23);
             this.BtnDiario.TabIndex = 7;
@@ -414,7 +417,7 @@
             // LblAgendamentos
             // 
             this.LblAgendamentos.AutoSize = true;
-            this.LblAgendamentos.Location = new System.Drawing.Point(20, 254);
+            this.LblAgendamentos.Location = new System.Drawing.Point(20, 266);
             this.LblAgendamentos.Name = "LblAgendamentos";
             this.LblAgendamentos.Size = new System.Drawing.Size(114, 13);
             this.LblAgendamentos.TabIndex = 10;
@@ -425,22 +428,19 @@
             this.PnlPaginas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PnlPaginas.BackColor = System.Drawing.Color.White;
-            this.PnlPaginas.Controls.Add(this.BtnSair);
-            this.PnlPaginas.Controls.Add(this.BtnAgenda);
-            this.PnlPaginas.Controls.Add(this.BtnClientes);
-            this.PnlPaginas.Location = new System.Drawing.Point(877, 68);
+            this.PnlPaginas.Location = new System.Drawing.Point(877, 97);
             this.PnlPaginas.Name = "PnlPaginas";
             this.PnlPaginas.Size = new System.Drawing.Size(130, 162);
             this.PnlPaginas.TabIndex = 23;
             // 
             // BtnSair
             // 
-            this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSair.FlatAppearance.BorderSize = 0;
-            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSair.Location = new System.Drawing.Point(45, 109);
+            this.BtnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnSair.Location = new System.Drawing.Point(667, 11);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(51, 40);
             this.BtnSair.TabIndex = 6;
@@ -450,14 +450,13 @@
             // 
             // BtnAgenda
             // 
-            this.BtnAgenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnAgenda.FlatAppearance.BorderSize = 0;
-            this.BtnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.BtnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAgenda.Location = new System.Drawing.Point(31, 13);
+            this.BtnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnAgenda.Location = new System.Drawing.Point(16, 11);
             this.BtnAgenda.Name = "BtnAgenda";
-            this.BtnAgenda.Size = new System.Drawing.Size(70, 40);
+            this.BtnAgenda.Size = new System.Drawing.Size(79, 40);
             this.BtnAgenda.TabIndex = 4;
             this.BtnAgenda.Text = "Agenda";
             this.BtnAgenda.UseVisualStyleBackColor = true;
@@ -465,18 +464,41 @@
             // 
             // BtnClientes
             // 
-            this.BtnClientes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnClientes.FlatAppearance.BorderSize = 0;
-            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClientes.Location = new System.Drawing.Point(31, 53);
+            this.BtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnClientes.Location = new System.Drawing.Point(132, 17);
             this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(70, 40);
+            this.BtnClientes.Size = new System.Drawing.Size(93, 29);
             this.BtnClientes.TabIndex = 5;
             this.BtnClientes.Text = "Clientes";
             this.BtnClientes.UseVisualStyleBackColor = true;
             this.BtnClientes.Click += new System.EventHandler(this.BtnClientes_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.label1.Location = new System.Drawing.Point(19, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 24);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Dashboard";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.BtnSair);
+            this.panel1.Controls.Add(this.BtnClientes);
+            this.panel1.Controls.Add(this.BtnAgenda);
+            this.panel1.Location = new System.Drawing.Point(273, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(734, 59);
+            this.panel1.TabIndex = 23;
             // 
             // FrmDashboard
             // 
@@ -484,6 +506,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1054, 636);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PnlPaginas);
             this.Controls.Add(this.LblAgendamentos);
             this.Controls.Add(this.PnlAtendimentos);
@@ -494,8 +518,9 @@
             this.Controls.Add(this.DgvAtendimentos);
             this.Controls.Add(this.PnlServicos);
             this.Controls.Add(this.CalCalendarioD);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmDashboard";
-            this.Text = "Dashboard";
+            this.Text = "SALLONA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.PnlFaturamento.ResumeLayout(false);
@@ -505,7 +530,7 @@
             this.PnlServicos.ResumeLayout(false);
             this.PnlServicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAtendimentos)).EndInit();
-            this.PnlPaginas.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -554,6 +579,8 @@
         private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Button BtnAgenda;
         private System.Windows.Forms.Button BtnClientes;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

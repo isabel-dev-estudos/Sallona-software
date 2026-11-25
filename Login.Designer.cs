@@ -20,6 +20,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.pnlLateral = new System.Windows.Forms.Panel();
+            this.LblSallona = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -34,7 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.chkLembrar = new System.Windows.Forms.CheckBox();
             this.lnkMostrar = new System.Windows.Forms.LinkLabel();
-            this.LblSallona = new System.Windows.Forms.Label();
             this.pnlLateral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +53,16 @@
             this.pnlLateral.Name = "pnlLateral";
             this.pnlLateral.Size = new System.Drawing.Size(454, 517);
             this.pnlLateral.TabIndex = 0;
+            // 
+            // LblSallona
+            // 
+            this.LblSallona.AutoSize = true;
+            this.LblSallona.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSallona.Location = new System.Drawing.Point(166, 34);
+            this.LblSallona.Name = "LblSallona";
+            this.LblSallona.Size = new System.Drawing.Size(155, 31);
+            this.LblSallona.TabIndex = 14;
+            this.LblSallona.Text = "SALLONA";
             // 
             // label6
             // 
@@ -213,16 +223,6 @@
             this.lnkMostrar.TabStop = true;
             this.lnkMostrar.Text = "Mostrar";
             // 
-            // LblSallona
-            // 
-            this.LblSallona.AutoSize = true;
-            this.LblSallona.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSallona.Location = new System.Drawing.Point(166, 34);
-            this.LblSallona.Name = "LblSallona";
-            this.LblSallona.Size = new System.Drawing.Size(155, 31);
-            this.LblSallona.TabIndex = 14;
-            this.LblSallona.Text = "SALLONA";
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,7 +242,7 @@
             this.Controls.Add(this.pnlLateral);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = "SALLONA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlLateral.ResumeLayout(false);
             this.pnlLateral.PerformLayout();

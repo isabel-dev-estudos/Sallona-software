@@ -52,7 +52,7 @@
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(130, 24);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Cliente Novo";
+            this.lblTitulo.Text = "Novo Cliente";
             // 
             // label2
             // 
@@ -177,7 +177,7 @@
             this.MinimizeBox = false;
             this.Name = "NovoClienteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Novo cliente";
+            this.Text = "SALLONA";
             this.ResumeLayout(false);
             this.PerformLayout();
 

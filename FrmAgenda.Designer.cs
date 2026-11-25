@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAgenda));
             this.CalCalendario = new System.Windows.Forms.MonthCalendar();
             this.GrpFormulario = new System.Windows.Forms.GroupBox();
             this.BtnAgendar = new System.Windows.Forms.Button();
@@ -42,9 +43,6 @@
             this.LblProcedimento = new System.Windows.Forms.Label();
             this.TxtCliente = new System.Windows.Forms.TextBox();
             this.LblCliente = new System.Windows.Forms.Label();
-            this.LblTitulo = new System.Windows.Forms.Label();
-            this.FlpFiltros = new System.Windows.Forms.FlowLayoutPanel();
-            this.LblFiltro = new System.Windows.Forms.Label();
             this.BtnTodos = new System.Windows.Forms.Button();
             this.BtnCorte = new System.Windows.Forms.Button();
             this.BtnMechas = new System.Windows.Forms.Button();
@@ -72,8 +70,9 @@
             this.BtnClientes = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LblAviso = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.GrpFormulario.SuspendLayout();
-            this.FlpFiltros.SuspendLayout();
             this.FlpAgendamento.SuspendLayout();
             this.PnlAgendamentos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAgendamentos)).BeginInit();
@@ -83,7 +82,7 @@
             // 
             // CalCalendario
             // 
-            this.CalCalendario.Location = new System.Drawing.Point(18, 18);
+            this.CalCalendario.Location = new System.Drawing.Point(18, 33);
             this.CalCalendario.MaxSelectionCount = 1;
             this.CalCalendario.Name = "CalCalendario";
             this.CalCalendario.TabIndex = 0;
@@ -103,7 +102,7 @@
             this.GrpFormulario.Controls.Add(this.LblProcedimento);
             this.GrpFormulario.Controls.Add(this.TxtCliente);
             this.GrpFormulario.Controls.Add(this.LblCliente);
-            this.GrpFormulario.Location = new System.Drawing.Point(18, 193);
+            this.GrpFormulario.Location = new System.Drawing.Point(18, 207);
             this.GrpFormulario.Name = "GrpFormulario";
             this.GrpFormulario.Size = new System.Drawing.Size(227, 419);
             this.GrpFormulario.TabIndex = 1;
@@ -115,6 +114,7 @@
             this.BtnAgendar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnAgendar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgendar.ForeColor = System.Drawing.Color.White;
             this.BtnAgendar.Location = new System.Drawing.Point(115, 383);
             this.BtnAgendar.Name = "BtnAgendar";
             this.BtnAgendar.Size = new System.Drawing.Size(75, 23);
@@ -253,46 +253,10 @@
             this.LblCliente.TabIndex = 0;
             this.LblCliente.Text = "Cliente";
             // 
-            // LblTitulo
-            // 
-            this.LblTitulo.AutoSize = true;
-            this.LblTitulo.Location = new System.Drawing.Point(277, 68);
-            this.LblTitulo.Name = "LblTitulo";
-            this.LblTitulo.Size = new System.Drawing.Size(169, 13);
-            this.LblTitulo.TabIndex = 2;
-            this.LblTitulo.Text = "Organização que Realça a Beleza";
-            // 
-            // FlpFiltros
-            // 
-            this.FlpFiltros.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.FlpFiltros.Controls.Add(this.LblFiltro);
-            this.FlpFiltros.Controls.Add(this.BtnTodos);
-            this.FlpFiltros.Controls.Add(this.BtnCorte);
-            this.FlpFiltros.Controls.Add(this.BtnMechas);
-            this.FlpFiltros.Controls.Add(this.BtnSelagem);
-            this.FlpFiltros.Controls.Add(this.BtnColoracao);
-            this.FlpFiltros.Controls.Add(this.BtnHidratacao);
-            this.FlpFiltros.Controls.Add(this.BtnSobrancelha);
-            this.FlpFiltros.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.FlpFiltros.Location = new System.Drawing.Point(956, 87);
-            this.FlpFiltros.Name = "FlpFiltros";
-            this.FlpFiltros.Size = new System.Drawing.Size(86, 321);
-            this.FlpFiltros.TabIndex = 3;
-            this.FlpFiltros.WrapContents = false;
-            // 
-            // LblFiltro
-            // 
-            this.LblFiltro.AutoSize = true;
-            this.LblFiltro.Location = new System.Drawing.Point(3, 0);
-            this.LblFiltro.Name = "LblFiltro";
-            this.LblFiltro.Size = new System.Drawing.Size(77, 13);
-            this.LblFiltro.TabIndex = 0;
-            this.LblFiltro.Text = "Procedimentos";
-            // 
             // BtnTodos
             // 
             this.BtnTodos.BackColor = System.Drawing.Color.White;
-            this.BtnTodos.Location = new System.Drawing.Point(3, 23);
+            this.BtnTodos.Location = new System.Drawing.Point(387, 71);
             this.BtnTodos.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnTodos.Name = "BtnTodos";
             this.BtnTodos.Size = new System.Drawing.Size(75, 23);
@@ -304,7 +268,7 @@
             // BtnCorte
             // 
             this.BtnCorte.BackColor = System.Drawing.Color.White;
-            this.BtnCorte.Location = new System.Drawing.Point(3, 66);
+            this.BtnCorte.Location = new System.Drawing.Point(479, 71);
             this.BtnCorte.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnCorte.Name = "BtnCorte";
             this.BtnCorte.Size = new System.Drawing.Size(75, 23);
@@ -316,7 +280,7 @@
             // BtnMechas
             // 
             this.BtnMechas.BackColor = System.Drawing.Color.White;
-            this.BtnMechas.Location = new System.Drawing.Point(3, 109);
+            this.BtnMechas.Location = new System.Drawing.Point(575, 71);
             this.BtnMechas.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnMechas.Name = "BtnMechas";
             this.BtnMechas.Size = new System.Drawing.Size(75, 23);
@@ -328,7 +292,7 @@
             // BtnSelagem
             // 
             this.BtnSelagem.BackColor = System.Drawing.Color.White;
-            this.BtnSelagem.Location = new System.Drawing.Point(3, 152);
+            this.BtnSelagem.Location = new System.Drawing.Point(669, 71);
             this.BtnSelagem.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnSelagem.Name = "BtnSelagem";
             this.BtnSelagem.Size = new System.Drawing.Size(75, 23);
@@ -340,7 +304,7 @@
             // BtnColoracao
             // 
             this.BtnColoracao.BackColor = System.Drawing.Color.White;
-            this.BtnColoracao.Location = new System.Drawing.Point(3, 195);
+            this.BtnColoracao.Location = new System.Drawing.Point(762, 71);
             this.BtnColoracao.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnColoracao.Name = "BtnColoracao";
             this.BtnColoracao.Size = new System.Drawing.Size(75, 23);
@@ -352,7 +316,7 @@
             // BtnHidratacao
             // 
             this.BtnHidratacao.BackColor = System.Drawing.Color.White;
-            this.BtnHidratacao.Location = new System.Drawing.Point(3, 238);
+            this.BtnHidratacao.Location = new System.Drawing.Point(859, 71);
             this.BtnHidratacao.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnHidratacao.Name = "BtnHidratacao";
             this.BtnHidratacao.Size = new System.Drawing.Size(75, 23);
@@ -364,7 +328,7 @@
             // BtnSobrancelha
             // 
             this.BtnSobrancelha.BackColor = System.Drawing.Color.White;
-            this.BtnSobrancelha.Location = new System.Drawing.Point(3, 281);
+            this.BtnSobrancelha.Location = new System.Drawing.Point(953, 71);
             this.BtnSobrancelha.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnSobrancelha.Name = "BtnSobrancelha";
             this.BtnSobrancelha.Size = new System.Drawing.Size(75, 23);
@@ -381,7 +345,7 @@
             this.FlpAgendamento.AutoScroll = true;
             this.FlpAgendamento.Controls.Add(this.PnlAgendamentos);
             this.FlpAgendamento.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.FlpAgendamento.Location = new System.Drawing.Point(277, 87);
+            this.FlpAgendamento.Location = new System.Drawing.Point(277, 107);
             this.FlpAgendamento.Name = "FlpAgendamento";
             this.FlpAgendamento.Size = new System.Drawing.Size(657, 497);
             this.FlpAgendamento.TabIndex = 4;
@@ -481,7 +445,7 @@
             this.DgvAgendamentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvAgendamentos.BackgroundColor = System.Drawing.Color.White;
             this.DgvAgendamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvAgendamentos.Location = new System.Drawing.Point(277, 87);
+            this.DgvAgendamentos.Location = new System.Drawing.Point(277, 107);
             this.DgvAgendamentos.MultiSelect = false;
             this.DgvAgendamentos.Name = "DgvAgendamentos";
             this.DgvAgendamentos.ReadOnly = true;
@@ -494,7 +458,7 @@
             // 
             this.BtnEditar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnEditar.BackColor = System.Drawing.Color.White;
-            this.BtnEditar.Location = new System.Drawing.Point(544, 590);
+            this.BtnEditar.Location = new System.Drawing.Point(553, 593);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(75, 23);
             this.BtnEditar.TabIndex = 18;
@@ -506,7 +470,7 @@
             // 
             this.BtnExcluir.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.BtnExcluir.BackColor = System.Drawing.Color.White;
-            this.BtnExcluir.Location = new System.Drawing.Point(447, 590);
+            this.BtnExcluir.Location = new System.Drawing.Point(456, 593);
             this.BtnExcluir.Name = "BtnExcluir";
             this.BtnExcluir.Size = new System.Drawing.Size(75, 23);
             this.BtnExcluir.TabIndex = 17;
@@ -520,7 +484,8 @@
             this.Btn_Pagar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.Btn_Pagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Pagar.Location = new System.Drawing.Point(647, 589);
+            this.Btn_Pagar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Pagar.Location = new System.Drawing.Point(656, 592);
             this.Btn_Pagar.Name = "Btn_Pagar";
             this.Btn_Pagar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Pagar.TabIndex = 19;
@@ -545,9 +510,10 @@
             // 
             this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BtnSair.FlatAppearance.BorderSize = 0;
-            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSair.Location = new System.Drawing.Point(560, 9);
+            this.BtnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnSair.Location = new System.Drawing.Point(567, 13);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(51, 40);
             this.BtnSair.TabIndex = 6;
@@ -558,11 +524,12 @@
             // BtnDashboard
             // 
             this.BtnDashboard.FlatAppearance.BorderSize = 0;
-            this.BtnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.BtnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDashboard.Location = new System.Drawing.Point(69, 9);
+            this.BtnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnDashboard.Location = new System.Drawing.Point(24, 8);
             this.BtnDashboard.Name = "BtnDashboard";
-            this.BtnDashboard.Size = new System.Drawing.Size(70, 40);
+            this.BtnDashboard.Size = new System.Drawing.Size(116, 40);
             this.BtnDashboard.TabIndex = 4;
             this.BtnDashboard.Text = "Dashboard";
             this.BtnDashboard.UseVisualStyleBackColor = true;
@@ -571,11 +538,12 @@
             // BtnClientes
             // 
             this.BtnClientes.FlatAppearance.BorderSize = 0;
-            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.BtnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.BtnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClientes.Location = new System.Drawing.Point(279, 9);
+            this.BtnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnClientes.Location = new System.Drawing.Point(172, 8);
             this.BtnClientes.Name = "BtnClientes";
-            this.BtnClientes.Size = new System.Drawing.Size(70, 40);
+            this.BtnClientes.Size = new System.Drawing.Size(88, 40);
             this.BtnClientes.TabIndex = 5;
             this.BtnClientes.Text = "Clientes";
             this.BtnClientes.UseVisualStyleBackColor = true;
@@ -602,31 +570,58 @@
             this.LblAviso.TabIndex = 0;
             this.LblAviso.Text = "Para pagar, é neessário primeiro \r\nseleionar um agendamento.";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(277, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Filtro (Procedimentos): ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.label2.Location = new System.Drawing.Point(21, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 24);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Agenda";
+            // 
             // FrmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1054, 636);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.BtnSobrancelha);
+            this.Controls.Add(this.BtnHidratacao);
+            this.Controls.Add(this.BtnColoracao);
+            this.Controls.Add(this.BtnSelagem);
+            this.Controls.Add(this.BtnMechas);
+            this.Controls.Add(this.BtnCorte);
+            this.Controls.Add(this.BtnTodos);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Btn_Pagar);
             this.Controls.Add(this.BtnEditar);
             this.Controls.Add(this.BtnExcluir);
             this.Controls.Add(this.DgvAgendamentos);
-            this.Controls.Add(this.FlpFiltros);
-            this.Controls.Add(this.LblTitulo);
             this.Controls.Add(this.GrpFormulario);
             this.Controls.Add(this.CalCalendario);
             this.Controls.Add(this.FlpAgendamento);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAgenda";
-            this.Text = "Agenda";
+            this.Text = "SALLONA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmAgenda_Load);
             this.GrpFormulario.ResumeLayout(false);
             this.GrpFormulario.PerformLayout();
-            this.FlpFiltros.ResumeLayout(false);
-            this.FlpFiltros.PerformLayout();
             this.FlpAgendamento.ResumeLayout(false);
             this.PnlAgendamentos.ResumeLayout(false);
             this.PnlAgendamentos.PerformLayout();
@@ -654,9 +649,6 @@
         private System.Windows.Forms.TextBox TxtValor;
         private System.Windows.Forms.Button BtnAgendar;
         private System.Windows.Forms.Button BtnLimpar;
-        private System.Windows.Forms.Label LblTitulo;
-        private System.Windows.Forms.FlowLayoutPanel FlpFiltros;
-        private System.Windows.Forms.Label LblFiltro;
         private System.Windows.Forms.Button BtnTodos;
         private System.Windows.Forms.Button BtnCorte;
         private System.Windows.Forms.Button BtnMechas;
@@ -685,6 +677,8 @@
         private System.Windows.Forms.Button BtnClientes;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label LblAviso;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

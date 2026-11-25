@@ -89,7 +89,7 @@ namespace Agenda
                 }
             }
             atualizandoLista = false;
-            CalcularValor(e);
+            CalcularValor(e); 
         }
 
         private void BtnLimpar_Click(object sender, EventArgs e)
@@ -438,6 +438,5 @@ namespace Agenda
             Application.Exit();
         }
 
-        
     }
 }

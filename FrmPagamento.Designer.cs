@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPagamento));
             this.Txb_Cliente = new System.Windows.Forms.TextBox();
             this.Dgv_Procedimentos = new System.Windows.Forms.DataGridView();
             this.Dgv_Valores = new System.Windows.Forms.DataGridView();
@@ -184,8 +185,9 @@
             // 
             this.btnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSair.FlatAppearance.BorderSize = 0;
-            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnSair.Location = new System.Drawing.Point(832, 11);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(47, 40);
@@ -197,11 +199,12 @@
             // btnDashboard
             // 
             this.btnDashboard.FlatAppearance.BorderSize = 0;
-            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnDashboard.Location = new System.Drawing.Point(27, 11);
             this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(100, 40);
+            this.btnDashboard.Size = new System.Drawing.Size(109, 40);
             this.btnDashboard.TabIndex = 4;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.UseVisualStyleBackColor = true;
@@ -210,9 +213,10 @@
             // btnAgenda
             // 
             this.btnAgenda.FlatAppearance.BorderSize = 0;
-            this.btnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgenda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgenda.Location = new System.Drawing.Point(456, 11);
+            this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnAgenda.Location = new System.Drawing.Point(365, 11);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.Size = new System.Drawing.Size(100, 40);
             this.btnAgenda.TabIndex = 8;
@@ -223,9 +227,10 @@
             // btnClientes
             // 
             this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnClientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Location = new System.Drawing.Point(255, 11);
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClientes.Location = new System.Drawing.Point(209, 12);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(100, 40);
             this.btnClientes.TabIndex = 5;
@@ -262,8 +267,9 @@
             this.Controls.Add(this.Dgv_Valores);
             this.Controls.Add(this.Dgv_Procedimentos);
             this.Controls.Add(this.Txb_Cliente);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPagamento";
-            this.Text = "Pagamento";
+            this.Text = "SALLONA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Procedimentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Valores)).EndInit();
