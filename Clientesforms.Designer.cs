@@ -225,6 +225,7 @@
             this.Name = "Clientesforms";
             this.Text = "SALLONA";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Clientesforms_Load_1);
             this.pnlConteudo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);

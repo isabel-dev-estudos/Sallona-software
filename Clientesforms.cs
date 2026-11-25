@@ -248,5 +248,10 @@ namespace Clientes
             Paginas.Abrir(new FrmDashboard(), this);
 
         }
+
+        private void Clientesforms_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

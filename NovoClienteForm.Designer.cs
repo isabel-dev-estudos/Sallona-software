@@ -133,6 +133,8 @@
             // 
             this.btnSalvar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnSalvar.ForeColor = System.Drawing.Color.White;
             this.btnSalvar.Location = new System.Drawing.Point(167, 390);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(104, 34);
@@ -178,6 +180,7 @@
             this.Name = "NovoClienteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "SALLONA";
+            this.Load += new System.EventHandler(this.NovoClienteForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

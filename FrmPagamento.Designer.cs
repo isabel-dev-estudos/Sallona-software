@@ -138,8 +138,11 @@
             // Btn_Salvar
             // 
             this.Btn_Salvar.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.Btn_Salvar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.Btn_Salvar.FlatAppearance.BorderColor = System.Drawing.Color.BlanchedAlmond;
+            this.Btn_Salvar.FlatAppearance.BorderSize = 0;
             this.Btn_Salvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.Btn_Salvar.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Btn_Salvar.Location = new System.Drawing.Point(452, 590);
             this.Btn_Salvar.Name = "Btn_Salvar";
             this.Btn_Salvar.Size = new System.Drawing.Size(173, 36);
@@ -190,7 +193,7 @@
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnSair.Location = new System.Drawing.Point(832, 11);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(47, 40);
+            this.btnSair.Size = new System.Drawing.Size(52, 40);
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -201,7 +204,7 @@
             this.btnDashboard.FlatAppearance.BorderSize = 0;
             this.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Pink;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.Location = new System.Drawing.Point(27, 11);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(109, 40);

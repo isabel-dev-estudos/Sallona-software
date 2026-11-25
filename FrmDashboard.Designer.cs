@@ -31,10 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDashboard));
             this.CalCalendarioD = new System.Windows.Forms.MonthCalendar();
             this.PnlFaturamento = new System.Windows.Forms.Panel();
-            this.TxtFaturamento = new System.Windows.Forms.TextBox();
             this.LblFaturamento = new System.Windows.Forms.Label();
             this.PnlAtendimentos = new System.Windows.Forms.Panel();
-            this.TxtQntAtendimentos = new System.Windows.Forms.TextBox();
             this.LblQntAtendimentos = new System.Windows.Forms.Label();
             this.PnlServicos = new System.Windows.Forms.Panel();
             this.TxtPercentualSobrancelha = new System.Windows.Forms.TextBox();
@@ -66,17 +64,22 @@
             this.BtnSemanal = new System.Windows.Forms.Button();
             this.BtnDiario = new System.Windows.Forms.Button();
             this.LblAgendamentos = new System.Windows.Forms.Label();
-            this.PnlPaginas = new System.Windows.Forms.Panel();
             this.BtnSair = new System.Windows.Forms.Button();
             this.BtnAgenda = new System.Windows.Forms.Button();
             this.BtnClientes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtQntdAtendimento = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.TxtFaturamentoTotal = new System.Windows.Forms.TextBox();
             this.PnlFaturamento.SuspendLayout();
             this.PnlAtendimentos.SuspendLayout();
             this.PnlServicos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAtendimentos)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // CalCalendarioD
@@ -89,21 +92,11 @@
             // 
             // PnlFaturamento
             // 
-            this.PnlFaturamento.Controls.Add(this.TxtFaturamento);
             this.PnlFaturamento.Controls.Add(this.LblFaturamento);
-            this.PnlFaturamento.Location = new System.Drawing.Point(649, 180);
+            this.PnlFaturamento.Location = new System.Drawing.Point(855, 97);
             this.PnlFaturamento.Name = "PnlFaturamento";
-            this.PnlFaturamento.Size = new System.Drawing.Size(200, 77);
+            this.PnlFaturamento.Size = new System.Drawing.Size(200, 43);
             this.PnlFaturamento.TabIndex = 4;
-            // 
-            // TxtFaturamento
-            // 
-            this.TxtFaturamento.BackColor = System.Drawing.Color.White;
-            this.TxtFaturamento.Location = new System.Drawing.Point(55, 35);
-            this.TxtFaturamento.Name = "TxtFaturamento";
-            this.TxtFaturamento.ReadOnly = true;
-            this.TxtFaturamento.Size = new System.Drawing.Size(100, 20);
-            this.TxtFaturamento.TabIndex = 14;
             // 
             // LblFaturamento
             // 
@@ -116,21 +109,11 @@
             // 
             // PnlAtendimentos
             // 
-            this.PnlAtendimentos.Controls.Add(this.TxtQntAtendimentos);
             this.PnlAtendimentos.Controls.Add(this.LblQntAtendimentos);
             this.PnlAtendimentos.Location = new System.Drawing.Point(649, 97);
             this.PnlAtendimentos.Name = "PnlAtendimentos";
-            this.PnlAtendimentos.Size = new System.Drawing.Size(200, 77);
+            this.PnlAtendimentos.Size = new System.Drawing.Size(200, 43);
             this.PnlAtendimentos.TabIndex = 5;
-            // 
-            // TxtQntAtendimentos
-            // 
-            this.TxtQntAtendimentos.BackColor = System.Drawing.Color.White;
-            this.TxtQntAtendimentos.Location = new System.Drawing.Point(55, 34);
-            this.TxtQntAtendimentos.Name = "TxtQntAtendimentos";
-            this.TxtQntAtendimentos.ReadOnly = true;
-            this.TxtQntAtendimentos.Size = new System.Drawing.Size(100, 20);
-            this.TxtQntAtendimentos.TabIndex = 13;
             // 
             // LblQntAtendimentos
             // 
@@ -423,16 +406,6 @@
             this.LblAgendamentos.TabIndex = 10;
             this.LblAgendamentos.Text = "Últimos agendamentos";
             // 
-            // PnlPaginas
-            // 
-            this.PnlPaginas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PnlPaginas.BackColor = System.Drawing.Color.White;
-            this.PnlPaginas.Location = new System.Drawing.Point(877, 97);
-            this.PnlPaginas.Name = "PnlPaginas";
-            this.PnlPaginas.Size = new System.Drawing.Size(130, 162);
-            this.PnlPaginas.TabIndex = 23;
-            // 
             // BtnSair
             // 
             this.BtnSair.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -500,15 +473,64 @@
             this.panel1.Size = new System.Drawing.Size(734, 59);
             this.panel1.TabIndex = 23;
             // 
+            // TxtQntdAtendimento
+            // 
+            this.TxtQntdAtendimento.BackColor = System.Drawing.Color.White;
+            this.TxtQntdAtendimento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtQntdAtendimento.CausesValidation = false;
+            this.TxtQntdAtendimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.TxtQntdAtendimento.Location = new System.Drawing.Point(-1, 31);
+            this.TxtQntdAtendimento.Multiline = true;
+            this.TxtQntdAtendimento.Name = "TxtQntdAtendimento";
+            this.TxtQntdAtendimento.ReadOnly = true;
+            this.TxtQntdAtendimento.Size = new System.Drawing.Size(200, 81);
+            this.TxtQntdAtendimento.TabIndex = 34;
+            this.TxtQntdAtendimento.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.TxtQntdAtendimento);
+            this.panel2.Location = new System.Drawing.Point(649, 146);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 113);
+            this.panel2.TabIndex = 36;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.TxtFaturamentoTotal);
+            this.panel3.Location = new System.Drawing.Point(855, 146);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 113);
+            this.panel3.TabIndex = 37;
+            // 
+            // TxtFaturamentoTotal
+            // 
+            this.TxtFaturamentoTotal.BackColor = System.Drawing.Color.White;
+            this.TxtFaturamentoTotal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TxtFaturamentoTotal.CausesValidation = false;
+            this.TxtFaturamentoTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.TxtFaturamentoTotal.Location = new System.Drawing.Point(-1, 31);
+            this.TxtFaturamentoTotal.Multiline = true;
+            this.TxtFaturamentoTotal.Name = "TxtFaturamentoTotal";
+            this.TxtFaturamentoTotal.ReadOnly = true;
+            this.TxtFaturamentoTotal.Size = new System.Drawing.Size(200, 81);
+            this.TxtFaturamentoTotal.TabIndex = 34;
+            this.TxtFaturamentoTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(1054, 636);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PnlPaginas);
             this.Controls.Add(this.LblAgendamentos);
             this.Controls.Add(this.PnlAtendimentos);
             this.Controls.Add(this.PnlFaturamento);
@@ -531,6 +553,10 @@
             this.PnlServicos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvAtendimentos)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -550,8 +576,6 @@
         private System.Windows.Forms.Label LblAgendamentos;
         private System.Windows.Forms.Label LblFaturamento;
         private System.Windows.Forms.Label LblQntAtendimentos;
-        private System.Windows.Forms.TextBox TxtFaturamento;
-        private System.Windows.Forms.TextBox TxtQntAtendimentos;
         private System.Windows.Forms.Label LblHidratacao;
         private System.Windows.Forms.Label LblColoracao;
         private System.Windows.Forms.Label LblMechas;
@@ -575,12 +599,15 @@
         private System.Windows.Forms.TextBox TxtPercentualSobrancelha;
         private System.Windows.Forms.TextBox TxtPercentualHidratacao;
         private System.Windows.Forms.TextBox TxtPercentualColoracao;
-        private System.Windows.Forms.Panel PnlPaginas;
         private System.Windows.Forms.Button BtnSair;
         private System.Windows.Forms.Button BtnAgenda;
         private System.Windows.Forms.Button BtnClientes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox TxtQntdAtendimento;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox TxtFaturamentoTotal;
     }
 }
 

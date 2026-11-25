@@ -131,5 +131,10 @@ namespace Clientes.Telas
                 return false;
             }
         }
+
+        private void NovoClienteForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

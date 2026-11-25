@@ -73,8 +73,8 @@ namespace Dashboard
                 DgvAtendimentos.Rows.Add(agendamento.Data.ToShortDateString(), agendamento.Cliente, agendamento.Procedimentos, agendamento.Horario, $"R$ {agendamento.Valor.ToString("F2")}");
             }
             DgvAtendimentos.ClearSelection();
-            TxtQntAtendimentos.Text = quantidade.ToString();
-            TxtFaturamento.Text = $"R$ {faturamento.ToString("F2")}";
+            TxtQntdAtendimento.Text = quantidade.ToString();
+            TxtFaturamentoTotal.Text = $"R$ {faturamento.ToString("F2")}";
             MostrarPercentual(PgbHidratacao, TxtPercentualHidratacao, ContarProcedimento("Hidratação"), quantidade);
             MostrarPercentual(PgbSobrancelha, TxtPercentualSobrancelha, ContarProcedimento("Sobrancelha"), quantidade);
             MostrarPercentual(PgbCorte, TxtPercentualCorte, ContarProcedimento("Corte"), quantidade);
@@ -140,5 +140,7 @@ namespace Dashboard
         {
             Paginas.Abrir(new FrmAgenda(), this);
         }
+
+
     }
 }

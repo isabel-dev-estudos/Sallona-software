@@ -82,7 +82,7 @@
             // 
             // CalCalendario
             // 
-            this.CalCalendario.Location = new System.Drawing.Point(18, 33);
+            this.CalCalendario.Location = new System.Drawing.Point(18, 50);
             this.CalCalendario.MaxSelectionCount = 1;
             this.CalCalendario.Name = "CalCalendario";
             this.CalCalendario.TabIndex = 0;
@@ -102,9 +102,9 @@
             this.GrpFormulario.Controls.Add(this.LblProcedimento);
             this.GrpFormulario.Controls.Add(this.TxtCliente);
             this.GrpFormulario.Controls.Add(this.LblCliente);
-            this.GrpFormulario.Location = new System.Drawing.Point(18, 207);
+            this.GrpFormulario.Location = new System.Drawing.Point(18, 224);
             this.GrpFormulario.Name = "GrpFormulario";
-            this.GrpFormulario.Size = new System.Drawing.Size(227, 419);
+            this.GrpFormulario.Size = new System.Drawing.Size(227, 436);
             this.GrpFormulario.TabIndex = 1;
             this.GrpFormulario.TabStop = false;
             this.GrpFormulario.Text = "+ Novo Agendamento";
@@ -258,7 +258,6 @@
             // 
             this.BtnTodos.BackColor = System.Drawing.Color.White;
             this.BtnTodos.Location = new System.Drawing.Point(387, 71);
-            this.BtnTodos.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnTodos.Name = "BtnTodos";
             this.BtnTodos.Size = new System.Drawing.Size(75, 23);
             this.BtnTodos.TabIndex = 1;
@@ -270,7 +269,6 @@
             // 
             this.BtnCorte.BackColor = System.Drawing.Color.White;
             this.BtnCorte.Location = new System.Drawing.Point(479, 71);
-            this.BtnCorte.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnCorte.Name = "BtnCorte";
             this.BtnCorte.Size = new System.Drawing.Size(75, 23);
             this.BtnCorte.TabIndex = 2;
@@ -282,7 +280,6 @@
             // 
             this.BtnMechas.BackColor = System.Drawing.Color.White;
             this.BtnMechas.Location = new System.Drawing.Point(575, 71);
-            this.BtnMechas.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnMechas.Name = "BtnMechas";
             this.BtnMechas.Size = new System.Drawing.Size(75, 23);
             this.BtnMechas.TabIndex = 3;
@@ -294,7 +291,6 @@
             // 
             this.BtnSelagem.BackColor = System.Drawing.Color.White;
             this.BtnSelagem.Location = new System.Drawing.Point(669, 71);
-            this.BtnSelagem.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnSelagem.Name = "BtnSelagem";
             this.BtnSelagem.Size = new System.Drawing.Size(75, 23);
             this.BtnSelagem.TabIndex = 4;
@@ -306,7 +302,6 @@
             // 
             this.BtnColoracao.BackColor = System.Drawing.Color.White;
             this.BtnColoracao.Location = new System.Drawing.Point(762, 71);
-            this.BtnColoracao.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnColoracao.Name = "BtnColoracao";
             this.BtnColoracao.Size = new System.Drawing.Size(75, 23);
             this.BtnColoracao.TabIndex = 5;
@@ -318,7 +313,6 @@
             // 
             this.BtnHidratacao.BackColor = System.Drawing.Color.White;
             this.BtnHidratacao.Location = new System.Drawing.Point(859, 71);
-            this.BtnHidratacao.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnHidratacao.Name = "BtnHidratacao";
             this.BtnHidratacao.Size = new System.Drawing.Size(75, 23);
             this.BtnHidratacao.TabIndex = 6;
@@ -330,7 +324,6 @@
             // 
             this.BtnSobrancelha.BackColor = System.Drawing.Color.White;
             this.BtnSobrancelha.Location = new System.Drawing.Point(953, 71);
-            this.BtnSobrancelha.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
             this.BtnSobrancelha.Name = "BtnSobrancelha";
             this.BtnSobrancelha.Size = new System.Drawing.Size(75, 23);
             this.BtnSobrancelha.TabIndex = 7;

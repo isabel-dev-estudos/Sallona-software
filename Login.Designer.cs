@@ -113,7 +113,7 @@
             // 
             this.btnEntrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnEntrar.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
             this.btnEntrar.Location = new System.Drawing.Point(540, 378);
             this.btnEntrar.Name = "btnEntrar";
