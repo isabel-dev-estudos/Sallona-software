@@ -114,6 +114,7 @@
             this.BtnAgendar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.BtnAgendar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.BtnAgendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAgendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAgendar.ForeColor = System.Drawing.Color.White;
             this.BtnAgendar.Location = new System.Drawing.Point(115, 383);
             this.BtnAgendar.Name = "BtnAgendar";
@@ -484,6 +485,7 @@
             this.Btn_Pagar.BackColor = System.Drawing.Color.PaleVioletRed;
             this.Btn_Pagar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Btn_Pagar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Pagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Pagar.ForeColor = System.Drawing.Color.White;
             this.Btn_Pagar.Location = new System.Drawing.Point(656, 592);
             this.Btn_Pagar.Name = "Btn_Pagar";
